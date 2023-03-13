@@ -79,3 +79,40 @@ describe('index.js', function () {
     });
   });
 });
+const cats = ["Milo", "Otis", "Garfield"];
+function destructivelyAppendCat(cat){
+  cats.push("Ralph")
+return cats
+}
+function destructivelyPrependCat(cat) {
+  cats.unshift("Bob")
+  return cats
+}
+function destructivelyRemoveLastCat(cat) {
+  cats.pop()
+  return cats
+}
+function destructivelyRemoveFirstCat(cat) {
+  cats.shift()
+  return cats
+}
+function appendCat(cat) {
+  let newArray = cats.slice();
+  newArray.push(cat)
+  return newArray
+}
+function prependCat(cat) {
+  let newArray = cats.slice();
+  newArray.unshift(cat)
+  return newArray
+}
+function removeLastCat(cat) {
+  let newArray = cats.slice();
+  newArray.pop(cat)
+  return newArray
+}
+function removeFirstCat(cat) {
+  let newArray = cats.slice();
+newArray.shift(cat)
+return newArray
+}
